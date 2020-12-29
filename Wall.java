@@ -11,8 +11,17 @@ public class Wall {
 		}
 	}
 	
-	public boolean checkWallIndex(int index) {
+	public boolean checkWallIndex(Integer index) {
 		return wall.containsKey(index);
+	}
+	
+	Coin coin = new Coin();
+	int balance = coin.getBalance();
+	
+	public void addHP(Integer wallIndex, Integer amount) {
+		if(amount>0 && amount<100 && balance>amount) {
+			wall.replace(wallIndex, amount);
+		}
 	}
 
 	public void printWall() {

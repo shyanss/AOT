@@ -20,7 +20,7 @@ public class Weapon {
     
     Wall w = new Wall();
     
-    public void upgradeWeapon(int wallIndex) {
+    public void upgradeWeapon(Integer wallIndex) {
     	int currentLevel = weapon.get(wallIndex);
     	if(currentLevel<highestLevel) {
     		weapon.replace(wallIndex, currentLevel+1);

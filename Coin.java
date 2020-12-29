@@ -11,14 +11,18 @@ public class Coin {
 		}
 	}
 	
-	public void getBalance() {
+	public int getBalance() {
+		return coin;
+	}
+	
+	public void printBalance() {
 		System.out.println("Current balance: " + coin);
 	}
 	
 	public void spendCoin(int amount) {
 		if(amount>0 && amount<coin) {
 			coin -= amount;
-			getBalance();
+			printBalance();
 		} else {
 			System.out.println("Negative!");
 		}
