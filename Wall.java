@@ -10,6 +10,10 @@ public class Wall {
 			wall.put(i, 50);
 		}
 	}
+	
+	public boolean checkWallIndex(int index) {
+		return wall.containsKey(index);
+	}
 
 	public void printWall() {
 		

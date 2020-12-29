@@ -5,6 +5,12 @@ public class Test {
 		g.setGround();
 		g.printGround();
 		
+		
+		Weapon wp = new Weapon("**");
+		wp.setHighestLevel(3);
+		wp.upgradeWeapon(1);
+		wp.printWeapon();
+		
 		Wall w = new Wall();
 		w.printWall();
 	}
